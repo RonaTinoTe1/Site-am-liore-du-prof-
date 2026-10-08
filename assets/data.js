@@ -287,14 +287,14 @@ window.SITE = {
 
   oral: {
     phases: [
-      { id: "prep", nom: "Préparation", min: 20, note: "Organisez vos idées et préparez un support si vous le souhaitez." },
-      { id: "expose", nom: "Exposé", min: 5, note: "Debout, sans notes. Présentez la question et pourquoi vous l’avez choisie, puis répondez-y." },
-      { id: "echange", nom: "Échange avec le jury", min: 10, note: "Le jury approfondit : précisez, argumentez, illustrez." },
-      { id: "orientation", nom: "Projet d’orientation", min: 5, note: "Le lien entre votre question et votre projet." }
+      { id: "prep", nom: "Préparation", min: 20, note: "Le jury a choisi une de tes deux questions. Mets tes idées en ordre ; tu peux préparer un support sur la feuille fournie." },
+      { id: "presentation", nom: "Présentation", min: 10, note: "Pourquoi tu as choisi cette question, puis la réponse que tu as élaborée." },
+      { id: "echange", nom: "Échange avec le jury", min: 10, note: "Le jury t’amène à préciser et approfondir ta pensée : complète, explicite, argumente." }
     ],
     criteres: ["Qualité orale", "Prise de parole en continu", "Qualité des connaissances", "Qualité de l’interaction", "Construction de l’argumentation"],
     conseils: [
-      "Choisissez une question problématisée qui vous intéresse vraiment : ça s’entend.",
+      "Lis d’urgence les attendus officiels de l’épreuve (le prof l’écrit : « urgentissime » pour tout élève d’HGGSP).",
+      "Choisis une question problématisée qui t’intéresse vraiment : ça s’entend.",
       "Accroche, définitions, problématique, deux ou trois temps, conclusion. Comme une mini-dissertation.",
       "Regardez le jury, pas le plafond. Parlez plus lentement que vous ne le pensez nécessaire.",
       "Entraînez-vous à voix haute, chronométré, devant quelqu’un.",
@@ -320,10 +320,11 @@ window.SITE = {
   },
 
   bacInfos: [
-    { titre: "Histoire-Géographie (tronc commun)", texte: "Évaluée en contrôle continu, à partir des moyennes de Première et de Terminale. Chaque devoir compte : la régularité paie." },
-    { titre: "HGGSP en Terminale", texte: "Épreuve écrite de 4 h, coefficient 16 : une dissertation et une étude critique de document(s)." },
-    { titre: "HGGSP arrêtée en fin de Première", texte: "Évaluée en contrôle continu, coefficient 8." },
-    { titre: "Grand Oral", texte: "20 minutes de préparation, 20 minutes d’épreuve, coefficient 10. Deux questions préparées, le jury en choisit une." }
+    { titre: "HGGSP en Terminale : écrit de 4 h", texte: "Deux exercices notés chacun sur 10 : une dissertation (au choix entre deux sujets portant sur deux thèmes distincts) et une étude critique d’un ou deux documents, sur un autre thème. Coefficient 16." },
+    { titre: "Session 2027 : thèmes 2, 4, 5 et 6", texte: "La note de service prévoit les thèmes 1, 2, 3 et 5 les années paires, et les thèmes 2, 4, 5 et 6 les années impaires. Les notions de Première non approfondies en Terminale doivent rester mobilisables." },
+    { titre: "Grand oral : 20 + 20 minutes", texte: "Depuis la session 2024 : 20 min de préparation, 10 min de présentation, 10 min d’échange avec le jury. Coefficient 10. Deux questions préparées, le jury en choisit une." },
+    { titre: "Grand oral ≠ oral de rattrapage", texte: "L’oral prévu dans la définition des épreuves de spécialité, c’est l’ancien oral de rattrapage, pas le Grand oral. Le prof y tient." },
+    { titre: "Histoire-Géographie et EMC (tronc commun)", texte: "Évalués en contrôle continu, à partir des moyennes de Première et de Terminale. Chaque devoir compte : la régularité paie." }
   ],
 
   checklist: [
@@ -333,7 +334,7 @@ window.SITE = {
     ["Le jour J", ["Lire tous les sujets avant de choisir", "Brouillon : problématique et plan d’abord", "Garder 10 minutes pour relire"]]
   ],
 
-  cris: ["ATTENTION !", "SORTEZ UNE FEUILLE !", "LA PROBLÉMATIQUE !", "CONTEXTUALISEZ !", "ON SE RÉVEILLE !", "1789 !", "LE CROQUIS !", "SOURCEZ !", "ÉCOUTEZ !", "LA CONSIGNE !"],
+  cris: ["ATTENTION !", "LISEZ LA CONSIGNE !", "PRENEZ LE TEMPS DE LIRE !", "PAS DE LANGAGE SMS !", "SORTEZ UNE FEUILLE !", "LA PROBLÉMATIQUE !", "CONTEXTUALISEZ !", "ON SE RÉVEILLE !", "1789 !", "LE CROQUIS !", "SOURCEZ !", "ÉCOUTEZ !", "LA CONSIGNE !"],
 
   citations: [
     ["L’histoire est la science des hommes dans le temps.", "Marc Bloch"],

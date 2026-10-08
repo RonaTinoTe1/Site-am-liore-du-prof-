@@ -1,19 +1,22 @@
-# Au travail avec Gaby
+# AU TRAVAIL AVEC GABY · ATAG 3.0
 
-Nouvelle version du site de la classe d’Histoire-Géographie et d’HGGSP (2nde, 1ère, Terminale).
-Site statique, sans dépendance ni étape de build : il suffit d’ouvrir `index.html`.
+Nouvelle façade publique du forum [AU TRAVAIL AVEC GABY](https://autravailavecgaby.forumactif.fr/)
+(« Support d'aide et travaux avec élèves », depuis le 18-01-07). Le forum reste l'espace de travail ;
+ce site en reprend l'identité (fond noir, turquoise, orange réservé au prof) et le rend lisible partout.
+
+Site statique, sans dépendance, sans build, sans aucune requête externe (polices hébergées localement).
 
 ## Contenu
-- **Programmes** de 2nde, 1ère, Terminale et HGGSP : thèmes, chapitres, axes, notions, repères, avec suivi « révisé » par chapitre.
-- **Méthodes** pas à pas : analyse de documents, composition, croquis, dissertation, étude critique, révisions.
-- **Oraux & Grand Oral** : chronomètre officiel (20 + 5 + 10 + 5 min), grille d’évaluation, idées de questions.
-- **Quiz de repères** et frise chronologique complète.
-- **Devoirs & annonces**, **Objectif bac** (compte à rebours, check-list).
-- Recherche instantanée (`Ctrl K`), mode sombre, version mobile, impression.
-- Le forum historique reste accessible depuis toutes les pages.
+- **L'esprit** : buts pédagogiques, moyens, code civil (11 règles), loi à accepter, barème, absence de publicité, maintenance.
+- **Classes** : espaces de classe 2026-2027 et cahiers de textes (liens vers le forum).
+- **Programmes** : textes officiels publiés sur le forum + programmes lisibles (2nde, 1ère, Tle, HGGSP, EMC) avec suivi des révisions.
+- **Aides** : banque de données, assistance technique/éthique, ouverture culturelle.
+- **Méthode, Repères (quiz), Grand oral (chrono 20 + 10 + 10), Bac (thèmes HGGSP 2027)**.
+- **19 ans** : l'histoire du lieu à travers les rapports d'activités.
 
 ## Mettre à jour
-Tout le contenu se trouve dans `assets/data.js` : annonces, devoirs, chapitres, méthodes, date du bac.
+- `assets/atag.js` : contenu repris du forum (règles, classes, liens, citations, histoire).
+- `assets/data.js` : programmes, méthodes, Grand oral, date du bac.
 
 ## Mise en ligne (GitHub Pages)
-Settings → Pages → *Deploy from a branch* → choisir la branche du site et le dossier `/ (root)` → Save.
+Settings → Pages → *Deploy from a branch* → branche du site, dossier `/ (root)` → Save.

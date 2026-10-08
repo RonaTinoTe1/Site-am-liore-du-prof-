@@ -3,40 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Au travail avec Gaby — Histoire-Géo & HGGSP</title>
-  <meta name="description" content="Le site de la classe : cours, méthodes, oraux, Grand Oral, repères et devoirs en Histoire-Géographie et HGGSP, de la Seconde à la Terminale.">
-  <meta name="theme-color" content="#f7f3ea" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0e1117" media="(prefers-color-scheme: dark)">
+  <title>AU TRAVAIL AVEC GABY — Support d'aide et travaux avec élèves</title>
+  <meta name="description" content="Le lieu de travail des élèves de Gaby en Histoire-Géographie, EMC et HGGSP, depuis le 18-01-07 : règles, espaces de classe, programmes, méthodes, Grand oral, repères.">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
   <script>
-    try { var t = localStorage.getItem("gaby.theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    try { var t = localStorage.getItem("gaby.theme"); if (t === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}
   </script>
 </head>
 <body>
   <a class="skip" href="#app">Aller au contenu</a>
 
+  <p class="mobile-note" id="mobileNote" hidden>
+    <span><b>Règle maison :</b> le téléphone, c'est pour consulter. Pour travailler, c'est au bureau, devant un ordinateur.</span>
+    <button type="button" aria-label="Fermer">×</button>
+  </p>
+
   <header class="topbar">
     <div class="wrap topbar__in">
-      <a class="brand" href="#/" aria-label="Accueil — Au travail avec Gaby">
-        <span class="brand__mark" aria-hidden="true">G<span>!</span></span>
-        <span class="brand__txt">Au travail <em>avec</em> Gaby</span>
+      <a class="brand" href="#/" aria-label="Accueil — AU TRAVAIL AVEC GABY">
+        <span class="planet planet--lg" style="--p:#6af2c5" aria-hidden="true"></span>
+        <span class="brand__txt"><b>AU TRAVAIL AVEC GABY</b><small>ATAG 3.0 · DEPUIS LE 18-01-07</small></span>
       </a>
 
       <nav class="nav" id="nav" aria-label="Navigation principale">
-        <a href="#/niveau/2nde">2nde</a>
-        <a href="#/niveau/1ere">1ère</a>
-        <a href="#/niveau/tle">Tle</a>
-        <a href="#/niveau/hggsp">HGGSP</a>
+        <a href="#/esprit">L'esprit</a>
+        <a href="#/classes">Classes</a>
+        <a href="#/textes">Programmes</a>
+        <a href="#/aides">Aides</a>
         <a href="#/methode">Méthode</a>
-        <a href="#/oraux">Oraux</a>
         <a href="#/reperes">Repères</a>
-        <a href="#/devoirs">Devoirs</a>
+        <a href="#/oraux">Grand oral</a>
         <a href="#/bac">Bac</a>
-        <a class="nav__forum" href="https://autravailavecgaby.forumactif.fr/" target="_blank" rel="noopener">Forum <span aria-hidden="true">↗</span></a>
+        <a href="#/histoire">19 ans</a>
+        <a class="nav__forum" href="https://autravailavecgaby.forumactif.fr/" target="_blank" rel="noopener">Le forum ↗</a>
       </nav>
 
       <div class="tools">
@@ -44,9 +46,9 @@
           <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <kbd>Ctrl K</kbd>
         </button>
-        <button class="iconbtn" id="themeBtn" type="button" aria-label="Changer de thème" title="Clair / sombre">
-          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></g></svg>
+        <button class="iconbtn" id="themeBtn" type="button" aria-label="Changer de thème" title="Noir (par défaut) / papier">
           <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="currentColor"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></g></svg>
         </button>
         <button class="iconbtn menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -60,20 +62,22 @@
   <footer class="footer">
     <div class="wrap footer__in">
       <div>
-        <p class="footer__brand">Au travail <em>avec</em> Gaby</p>
-        <p class="muted">Histoire-Géographie &amp; HGGSP · de la Seconde à la Terminale.</p>
+        <p class="footer__brand">AU TRAVAIL AVEC GABY</p>
+        <p class="muted" style="margin:0">Support d'aide et travaux avec élèves · depuis le 18-01-07.</p>
         <p class="quote" id="quote"></p>
+        <p class="sober">Zéro publicité depuis 2008 · zéro traceur · zéro requête externe.<br>Fond noir par défaut : économie d'énergie et confort des yeux.</p>
       </div>
       <div class="footer__links">
-        <a href="#/methode">Méthodes</a>
-        <a href="#/oraux">Grand Oral</a>
-        <a href="#/reperes">Quiz repères</a>
+        <a href="#/esprit/code-civil">Le code civil</a>
+        <a href="#/classes">Cahiers de textes</a>
+        <a href="#/aides">Banque de données</a>
+        <a href="#/histoire">Les rapports d'activités</a>
         <a href="https://autravailavecgaby.forumactif.fr/" target="_blank" rel="noopener">Le forum ↗</a>
       </div>
       <div class="footer__fun">
         <button class="btn btn--ghost btn--sm" id="criBtn" type="button" title="Vous êtes prévenus.">Déclencher un cri <span aria-hidden="true">📢</span></button>
         <label class="switch"><input type="checkbox" id="calmToggle"> <span>Mode calme</span></label>
-        <p class="tiny mono">v2.0 · la v1 a bien vécu.</p>
+        <p class="tiny mono" id="actualise"></p>
       </div>
     </div>
   </footer>
@@ -83,13 +87,14 @@
 
   <div class="palette" id="palette" hidden>
     <div class="palette__box" role="dialog" aria-modal="true" aria-label="Recherche">
-      <input id="paletteInput" type="search" placeholder="Un chapitre, une date, une méthode…" autocomplete="off" spellcheck="false">
+      <input id="paletteInput" type="search" placeholder="Une règle, une classe, un chapitre, une date…" autocomplete="off" spellcheck="false">
       <ul id="paletteList" role="listbox"></ul>
       <p class="palette__hint mono">↑↓ pour naviguer · Entrée pour ouvrir · Échap pour fermer</p>
     </div>
   </div>
 
   <script src="assets/data.js"></script>
+  <script src="assets/atag.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
